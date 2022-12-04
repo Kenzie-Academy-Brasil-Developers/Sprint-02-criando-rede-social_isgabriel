@@ -98,12 +98,6 @@
     border-radius: var(--radius-newPost);
 }
 
-/* Reverse posts and aside */
-.main__generalContent {
-    display: flex;
-    flex-direction: column-reverse;
-}
-
 /* posts */
 .container__posts {
     display: flex;
@@ -241,8 +235,6 @@
     border: none;
     border-radius: var(--radius-modal);
 }
-.modal__container:hover {
-}
 .container__divPost {
     display: flex;
     flex-direction: column;
@@ -255,7 +247,6 @@
 }
 .container__cardUserModal {
     display: flex;
-    font-weight: ;
     width: 100%;
     margin-top: 20px;
 }
@@ -272,6 +263,11 @@
     border: 1px solid transparent;
     border-radius: 100%;
 }
+/* .modal__btn:hover {
+    transition: 0.5s;
+    background-color: var(--color-primary);
+    color: var(--white-fixed);
+} */
 .container__divPost {
     padding: 0 24px;
 }
@@ -279,6 +275,83 @@
     max-height: 50%;
     margin-bottom: 40px;
 }
-/* .header__navbar--logOut {
-    cursor: pointer;
-} */ ;
+@media (min-width: 600px) {
+    .modal__container {
+        height: 70%;
+    }
+}
+@media (min-width: 769px) {
+    .header__navbar {
+        padding-left: 100px;
+        padding-right: 71px;
+    }
+    .header__navbar--logOut {
+        cursor: pointer;
+    }
+    .header__navbar--logOut:hover {
+        transition: 0.5s;
+
+        color: var(--color-primary);
+    }
+    /* new post */
+    .itemsPost__div {
+        width: 45vw;
+    }
+    /* New post and aside container */
+    .main__container {
+        padding-left: 100px;
+        padding-right: 71px;
+    }
+    .main__generalContent {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .container__suggestions {
+        width: 100%;
+        max-width: 420px;
+
+        margin-top: 28px;
+    }
+    .container__list {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        overflow-x: hidden;
+    }
+    .container__list--user {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Posts */
+    .container__post {
+        width: 50vw;
+    }
+    .container__post--description {
+        max-height: 14vh;
+    }
+    .btnOpenModal {
+        cursor: pointer;
+    }
+
+    /* Modal */
+    .modal__container {
+        margin: 5% auto;
+
+        max-width: 50%;
+        max-height: 45%;
+    }
+    .modal__btn:hover {
+        transition: 0.6s;
+        cursor: pointer;
+
+        background-color: var(--color-primary);
+        color: var(--white-fixed);
+    }
+}

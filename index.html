@@ -40,42 +40,44 @@
             </nav>
         </header>
         <main class="main__container">
-            <section class="container__newPost">
-                <div class="userInfo__div">
-                    <img
-                        src="./src/assets/img/user1.svg"
-                        alt="user-icon"
-                        class="main__container--userIcon"
-                    />
-                    <div class="userInfo__parags">
-                        <p class="main__container--userName">Samuel Leão</p>
-                        <p class="main__container--userJob">
-                            Front end Engineer
-                        </p>
-                    </div>
-                </div>
-                <div class="itemsPost__div">
-                    <input
-                        type="text"
-                        placeholder="Digitar título do post"
-                        class="itemsPost__div--title"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Digitar descrição do post"
-                        class="itemsPost__div--description"
-                    />
-                    <div class="itemsPost__div--btnDiv">
-                        <button id="postBtn">Postar</button>
-                    </div>
-                </div>
-            </section>
             <div class="main__generalContent">
-                <section class="container__posts">
-                    <h1 class="container__posts--titlePosts">Posts</h1>
+                <section class="container__newPost">
+                    <div class="userInfo__div">
+                        <img
+                            src="./src/assets/img/user1.svg"
+                            alt="user-icon"
+                            class="main__container--userIcon"
+                        />
+                        <div class="userInfo__parags">
+                            <p class="main__container--userName">Samuel Leão</p>
+                            <p class="main__container--userJob">
+                                Front end Engineer
+                            </p>
+                        </div>
+                    </div>
+                    <div class="itemsPost__div">
+                        <input
+                            type="text"
+                            placeholder="Digitar título do post"
+                            class="itemsPost__div--title"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Digitar descrição do post"
+                            class="itemsPost__div--description"
+                        />
+                        <div class="itemsPost__div--btnDiv">
+                            <button id="postBtn">Postar</button>
+                        </div>
+                    </div>
                 </section>
                 <aside class="container__suggestions"></aside>
             </div>
+
+            <section class="container__posts">
+                <h1 class="container__posts--titlePosts">Posts</h1>
+            </section>
+
             <dialog class="modal__container"></dialog>
         </main>
         <script src="./src/scripts/users.js"></script>
