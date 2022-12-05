@@ -39,6 +39,7 @@ body {
     font-family: var(--font-general);
 }
 header {
+    z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
