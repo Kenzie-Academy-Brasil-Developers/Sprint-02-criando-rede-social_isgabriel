@@ -97,6 +97,16 @@
     border: none;
     border-radius: var(--radius-newPost);
 }
+#postBtn:hover {
+    background-color: var(--color-primary);
+    color: var(--white-fixed);
+
+    font-weight: var(--semi-bold);
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
 
 /* posts */
 .container__posts {
